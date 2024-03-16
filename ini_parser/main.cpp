@@ -51,7 +51,6 @@ public:
 class IniParser {
 private:
     std::string filename_;
-    std::vector<std::string> raw_data;
     std::map<std::string, std::map<std::string, std::string>>  data;
     
     enum class LineType {
@@ -216,13 +215,6 @@ public:
     
     // деструктр
     ~IniParser() {};
-    
-    // тестовый метод для проверки raw_data
-    void print_raw_data() {
-        for (auto el : this->raw_data) {
-            std::cout << el << std::endl;
-        }
-    }
     
     // метод для получения значения конкретного поля файла
     template <typename VALUE_TYPE>
