@@ -1,1 +1,5 @@
-*.ini
+ini_parser.xcodeproj/*
+CMakeCache.txt
+Makefile
+cmake_install.cmake
+CMakeFiles

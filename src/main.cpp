@@ -239,7 +239,7 @@ public:
 
 int main(int argc, const char * argv[]) {
     
-    IniParser parser("/Users/tkvitko/c/netology/cpp_advanced/ini_parser/config.ini");
+    IniParser parser("/Users/tkvitko/c/netology/cpp_advanced/ini_parser/config/config.ini");
     std::string path = "Section1.var1";
     auto value = parser.get_value<std::string>(path);
     std::cout << value << std::endl;
