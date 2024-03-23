@@ -6,7 +6,9 @@
 
 ## Использование
 ```cpp
-    IniParser parser("config.ini");
-    std::string path = "Section1.var1";
-    auto value = parser.get_value<std::string>(path);
+#include "IniParser.hpp"
+
+IniParser parser("config.ini");
+std::string path = "Section1.var1";
+auto value = parser.get_value<std::string>(path);
 ```
